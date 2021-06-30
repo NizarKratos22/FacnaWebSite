@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Facna</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" sizes="25x25" href="fac.png">
+
+
+</head>
+<body>
+<div class="container">
+    <!--Navigation bar-->
+        <div class="navbar">
+            <img src="fac.png" alt="FACNA COMp." class="logo">
+            <nav>
+            <ul id="menuList">
+                <li><a href="#" onclick="popupcreator()">Creator</a></li>
+                <li><a href="#">Social media</a></li>
+                <li><a href="#" onclick="popupabout()">About</a></li>  
+                <li><a href="#">Credit</a></li>
+            </ul>
+            </nav>
+            <img src="menu.png"  class="menu-icon" onclick="togglemenu()">
+
+        </div>
+
+            <div class="row">
+            
+                <div class="col-1">
+                <h2>Facna <br></h2> 
+                <h3>Download for free</h3>
+                <p>The first tunisian application for students</p>
+                <h4>NK22 companies </h4><br/>
+                <button type="button">Download Now<img src="arrow.png"> </button>
+<!--Image and description -->
+            </div>
+                <div class="col-2">
+                      
+                    <img src="dashboard.jpg" class="facna">
+                    <div class="color-box">
+                    </div>
+                   <div  class="add-btn">   
+                       <img src="add.png"> 
+                       <p><small>Start as <br>a student</small> </p>
+                   </div> 
+                </div>
+            </div>
+
+    
+     <!-- Social media links-->
+            <div class="social-links">  
+                <a href="https://www.facebook.com/nizarhajjouni22/" target="_blank"><img src="fb.png"></a>
+                <a href="https://twitter.com/krat0_s" target="_blank"><img src="tw.png"></a>
+                <a href="https://www.instagram.com/nizarhajouni/" target="_blank"><img src="ig.png"></a>
+            </div>
+    <!--Pop  up pages-->
+    <!--About popup-->
+      <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+            <div class="content">
+            <div class="close-btn" onclick="popupabout()">&times;</div>
+            <h1>About</h1>
+            <br>
+            <p>Facna is tunisian application founded and created by mottaki hajouni aged 20 y.o studying in iset zaghouan .
+                the main goal of this application is facilite the new students in all university in tunisia founding their own way after succed in baccalauriat 
+                also found their best conditions with their own score in the correct university also  the application had many features like add events in each university
+                it can help the gouvermenent aswell , got official exams of each year , extra bonus of education like university activity clubs 
+                and formations and it will always stay tuned in each period with alot of updates.
+
+            </p>
+            </div>
+         </div>
+         <!--contact creator-->
+         <div class="popup2" id="popup-2">
+            <div class="overlay2"></div>
+                <div class="content2">
+                <div class="close-btn2" onclick="popupcreator()">&times;</div>
+                <h1>Creator</h1>
+                <br>
+                <p>If you need any help or any content you can mail the developer at this mail <a href="mailto:nizar.hajjoui7@gmail.com">nizar.hajjoui7@gmail.com</a>
+                 or contact the mail of facna application for support <a href="mailto:facnamk@gmail.com">facnamk@gmail.com</a> </p>
+    
+                </p>
+                </div>
+             </div>
+
+
+
+      </div>
+
+
+
+
+</div>
+
+<script>  
+ var menulist = document.getElementById("menuList");
+  
+    menulist.style.maxHeight ="0px";
+
+    function togglemenu(){
+        if(menulist.style.maxHeight=="0px"){
+
+            menulist.style.maxHeight="130px";
+        }
+        else{
+            menulist.style.maxHeight="0px";
+        }
+    }
+    function popupabout(){
+
+       var popupa = document.getElementById("popup-1");
+        popupa.classList.toggle("active");  
+   
+    }
+    function popupcreator(){
+        var popupc= document.getElementById("popup-2");
+        popupc.classList.toggle("active");
+    }
+</script>
+
+
+</body>
+
+</html>
